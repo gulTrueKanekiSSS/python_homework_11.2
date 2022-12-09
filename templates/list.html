@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Candidates</title>
+    </head>
+    <body>
+        <h1>Все кандидаты</h1>
+        {% for i in range(7) %}
+        <p><a href="/candidate/{{ i+1 }}">{{ candidates[i].name }}</a></p>
+        {% endfor %}
+    </body>
+</html>
